@@ -36,7 +36,7 @@ stages:
     - task: PublishBuildArtifacts@1
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-        ArtifactName: 'drop_$(Build.SourceBranchName)'
+        ArtifactName: 'drop'
         publishLocation: 'Container'
 
 #   - job: SecondJob
