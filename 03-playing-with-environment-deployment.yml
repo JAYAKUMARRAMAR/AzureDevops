@@ -17,11 +17,11 @@ pool:
   vmImage: 'ubuntu-latest'
 
 stages:
-- stage: Build
-  jobs:
-  - job: BuildJob
-    steps:
-    - bash: echo "Do the build"
+# - stage: Build
+#   jobs:
+#   - job: BuildJob
+#     steps:
+#     - bash: echo "Do the build"
 - stage: DevDeploy
   jobs:
   - deployment: DevDeployJob
